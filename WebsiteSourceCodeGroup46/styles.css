@@ -1,0 +1,304 @@
+/*General*/
+body * {
+    font-family: "Verdana", sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+ul li {
+    border: none !important;
+}
+
+.content {
+    margin: 15px;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*Nav Bar*/
+
+.navbar {
+    background-color: black;
+    padding: 10px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    right: 0;
+    left: auto;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 120;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    float: left;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-left: 5px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+
+/*Containers*/
+
+.image-section {
+    height: 100vh;
+    -moz-text-align: center; /*works on Firefox */
+    -webkit-text-align: center; /*works on Safari and Google Chrome*/
+    text-align: center;
+    background-color: #262626;
+    -moz-padding: 20px; /*works on Firefox */
+    -webkit-padding: 20px; /*works on Safari and Google Chrome*/
+    padding: 20px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.image-section img {
+    max-width: 60%;
+    max-height: 60%;
+    margin-top: 50px !important;
+    object-fit: cover;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.links a {
+    flex: 0 0 10%;
+}
+
+.icon-link {
+    text-decoration: none;
+    font-size: 48px auto;
+    padding: 26px;
+}
+
+.content-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.home {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home p {
+    font-weight: bold;
+}
+
+.home h1 {
+    font-size: 64px;
+}
+
+.html {
+    width: 90%;
+    background-color: #04aa6d;
+}
+
+.w3-ul li {
+    padding: 8px 0px;
+}
+
+/*Utilities*/
+
+.w3-margin-top-2 {
+    margin-top: 32px;
+}
+
+.w3-margin-top-4 {
+    margin-top: 64px;
+}
+
+.w3-margin-top-20-percent {
+    margin-top: 20%;
+}
+
+.w3-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.w3-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1200px) {
+    .home {
+        width: 90%;
+    }
+    .content-container {
+        width: 80% !important;
+    }
+
+    .download-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home {
+        width: 100%;
+    }
+    .home h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-container {
+        width: 100% !important;
+    }
+
+    .image-section {
+        -moz-padding: 10px; /*works on Firefox */
+        -webkit-padding: 10px; /*works on Safari and Google Chrome*/
+        padding: 10px;
+    }
+
+    .links a {
+        flex: 0 0 5% !important;
+    }
+
+    .home {
+        text-align: center;
+        width: 100%;
+    }
+
+    .home p {
+        font-size: medium !important;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+    .home h2 {
+        font-size: 24px;
+    }
+
+    .w3-fixed {
+        position: inherit;
+    }
+
+    .image-section {
+        height: auto;
+    }
+
+    .image-section img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .icon-link {
+        font-size: 24px;
+    }
+
+    .w3-container,
+    .w3-panel {
+        padding: 0.01em;
+    }
+
+    .download-text {
+        display: inline-block;
+    }
+}
