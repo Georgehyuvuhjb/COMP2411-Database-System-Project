@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase success - OSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #video-background {
+        position: fixed;
+        right: 20;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+    }
+    </style>
+</head>
+
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="images/Big%20Bang.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="navbar">
+        <div class ="logo">
+            <a href="13customerhome.php" ><img src="images/logo_smaller.jpg" width="80"></a>
+        </div>
+        <div class="search-container">
+            <form action="7productlist.php" method="GET">
+                <input type="text" class="search-bar" placeholder="Search by product name..." name="search">
+                <button type="submit" class="custom-button"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-user-o"></i></button>
+            <div class="dropdown-content">
+                <a href="4customeracctinfo.php">View Account Information</a>
+                <a href="logout.php">Sign Out</a>
+            </div>
+        </div>
+        <div class="cart-button">
+            <a href="10cart.php"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </div>
+
+    <div class="centered" style="color: white">
+        <h1>Your Purchase Is Successful!</h1>
+        <a href="13customerhome.php"><button>Back to Main Page</button></a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fade animation */
+.fade {
+    -webkit-animation: fade 2s linear infinite;
+    -moz-animation: fade 2s linear infinite;
+    -o-animation: fade 2s linear infinite;
+    animation: fade 2s linear infinite;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@-moz-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@-o-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

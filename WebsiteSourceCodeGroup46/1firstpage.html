@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - OSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--external stylesheets-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1, h2, h3 {
+        text-align: center;
+        }
+
+        .flex {
+          display: flex;
+          justify-content: center;
+        }
+
+        .flex-item + .flex-item {
+          margin-left: 10px;
+        }
+
+        #video-background {
+            position: fixed;
+            right: 20;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="images/UniverseScale.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="navbar">
+        <div class ="logo">
+            <a href="1firstpage.html" ><img src="images/logo_smaller.jpg" width="80"></a>
+        </div>
+    </div>
+    <div style="color: white;">
+        <h1>Welcome to OSS!</h1>
+    </div>
+    <div class="flex">
+        <a href="1ChooseCusAdminLogin.html"><button><h3>LOG IN</h3></button></a>&emsp;
+        <a href="1ChooseCusAdminSignup.html"><button><h3>SIGN UP</h3></button></a>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div style="font-family: Roboto, sans-serif; color: mediumvioletred">
+        <center><h5>Embrace Universe Science In a Seamless Shopping Journey!</h5></center>
+    </div>
+    </div>
+    <div class="mySlides fade">
+        <img src="images/First1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/First2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/First3.png" style="width:100%">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
